@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
 
@@ -97,5 +98,12 @@ public class DataSourceConfig implements EnvironmentAware {
 
         return sessionFactoryBean;
     }
+
+    //트랜잭션 매니저 빈 등록
+//    @Bean("oracleBasicTransactionManager")
+//    public DataSourceTransactionManager oracleBasicTransactionManager(@Qualifier("dataSourceOracle") DataSource dataSource) {
+//        DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager(dataSource);
+//        return dataSourceTransactionManager;
+//    }
 
 }

@@ -1,6 +1,7 @@
 package db.practice.demo.dao;
 
 import db.practice.demo.comn.OracleAbstarctMapper;
+import db.practice.demo.dao.mapper.DepartmentMapper;
 import db.practice.demo.dto.Department;
 import org.springframework.stereotype.Repository;
 
@@ -19,4 +20,8 @@ public class DepartmentDao extends OracleAbstarctMapper {
 
         return departmentMapper.selectAll();
     }
+
+//    public List<YlTbApiCdPtInfEntity> selectListOrderByPointNameAsc(YlTbApiCdPtInfEntity entity) {
+//        return getSqlSession().getMapper(YlTbApiCdPtInfMapper.class).selectListOrderByPointNameAsc(entity);
+//    }
 }

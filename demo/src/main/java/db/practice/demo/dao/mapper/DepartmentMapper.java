@@ -1,4 +1,4 @@
-package db.practice.demo.dao;
+package db.practice.demo.dao.mapper;
 
 import db.practice.demo.dto.Department;
 import org.apache.ibatis.annotations.Mapper;
